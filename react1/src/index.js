@@ -59,7 +59,7 @@ function Topics() {
         {list}
       </ul>
       <Routes>
-        <Route exact path="/topics/:topic_id" element={<Topic/>}></Route>
+        <Route exact path=":topic_id" element={<Topic/>}></Route>
       </Routes>
     </div>
   );
@@ -92,7 +92,7 @@ function App() {
 
         <Routes>
           <Route exact path="/" element={<Home/>}></Route>
-          <Route exact path="/topics" element={<Topics/>}></Route>
+          <Route exact path="/topics*" element={<Topics/>}></Route>
           <Route exact path="/contact" element={<Contact/>}></Route>
         </Routes>
       </div>
